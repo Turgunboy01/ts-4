@@ -8,3 +8,14 @@
   background-image: linear-gradient(rgba(209, 133, 133, 0), #1e1e20);
 }
 
+.gradient2 {
+  /* background-color: red; For browsers that do not support gradients */
+  background: linear-gradient(
+    to bottom right,
+    #00a795 -500px,
+    rgba(255, 0, 0, 0) 150px,
+    #00a795 500px
+  );
+}
+
+/* .gradient2 */
