@@ -1,0 +1,55 @@
+import React from "react";
+import logo from "../../../assets/hero.webp";
+import mount from "../../../assets/maoun.webp";
+import { TiArrowRight } from "react-icons/ti";
+import { FiPhoneCall } from "react-icons/fi";
+const Hero = () => {
+  return (
+    <div
+      className="h-[100vh] relative  "
+      style={{
+        backgroundImage: `url(${logo})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="w-[1200px] mx-auto px-5 flex z-[999] items-center relative  h-[100vh]">
+        <div className="w-[500px]">
+          <h2 className="text-white lg:text-[48px] lg:leading-[58px] md:text-[40px] md:leading-[50px] sm:text-[32px] sm:leading-[40px] text-[28px] leading-[34px] pb-[15px] font-bold aos-init aos-animate">
+            We offer digital solutions
+          </h2>
+          <h3 className="text-[#ffffff99] uppercase tracking-[0.03em] lg:leading-[22px] lg:text-[18px] md:leading-[20px] md:text-[16px] sm:leading-[18px] sm:text-[14px] leading-[16px] text-[13px] font-medium sm:mb-[52px] mb-[32px] aos-init aos-animate">
+            In any difficulty
+          </h3>
+          <div className="flex items-center gap-[16px] aos-init aos-animate">
+            <button className="s-button bg-[#1a8377] border-[2px] rounded-2xl border-[#00a795] hover:bg-[#00a795] rounded-12 lg:text-[16px] text-[13px] py-[10px] lg:!pl-6 text-[#fff] sm:pl-4 pl-4 pr-3  md:text-[16px] sm:text-[13px] md:py-[11px] sm:py-[10px] flex items-center justify-center cursor-pointer transition duration-300 group">
+              <div className="font-semibold flex items-center gap-4">
+                <span className="sm:text-[16px] text-[13px] cursor-pointer">
+                  Portfolio
+                </span>
+                <span className="bg-[#4CC1B5] rounded-full w-[24px] h-[24px] flex items-center justify-center transition duration-300 -rotate-45 group-hover:rotate-0  ">
+                  <TiArrowRight size={20} />
+                </span>
+              </div>
+            </button>
+            <button className="s-button bg-transparent border-[2px] rounded-2xl border-[#fff] hover:bg-[#00a795] rounded-12 lg:text-[16px] hover:border-[#00a795] text-[13px] py-[10px] pl-6 pr-3  text-[#fff] flex items-center gap-4 justify-center cursor-pointer transition duration-300 group">
+              <span className="font-medium"> Call</span>
+              <span className="bg-[#b9b9b9] group-hover:bg-[#4CC1B5] w-6 h-6 rounded-full flex justify-center items-center ">
+                <FiPhoneCall size={16} />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      .
+      <div className="absolute bottom-[-350px] w-full">
+        <img src={mount} alt="" />
+        <div className="relative">
+          <div className=" absolute bottom-[0px] gradiant  w-full "></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

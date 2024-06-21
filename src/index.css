@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradiant {
+  height: 900px;
+  background-color: #00000000; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(209, 133, 133, 0), #1e1e20);
+}
+
