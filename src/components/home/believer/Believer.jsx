@@ -22,7 +22,7 @@ const Believer = () => {
           Companies that believe in us
         </motion.h3>
         <motion.div
-          whileInView={{ translateX: ["30px", 0], opacity: [0.9, 1] }}
+          whileInView={{ translateX: ["100px", 0], opacity: [0.9, 1] }}
           transition={{ duration: 1 }}
           className="grid grid-cols-5 gap-5"
         >

@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../../../assets/hero.webp";
 import mount from "../../../assets/maoun.webp";
 import { TiArrowRight } from "react-icons/ti";
 import { FiPhoneCall } from "react-icons/fi";
 import { motion } from "framer-motion";
+import ReactCurvedText from "react-curved-text";
+import { FaPlay } from "react-icons/fa";
 const Hero = () => {
+  useEffect(() => {
+    const text = document.querySelector(".text");
+    text.innerHTML = text.innerText
+      .split("")
+      .map(
+        (char, i) =>
+          `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>`
+      )
+      .join("");
+  }, []);
   return (
     <div
-      className="h-[100vh] relative  "
+      className="h-[100vh] hero relative  "
       style={{
         backgroundImage: `url(${logo})`,
         backgroundRepeat: "no-repeat",
@@ -61,6 +73,16 @@ const Hero = () => {
           UIC
         </h1>
       </motion.div>
+      <div className="absolute  bottom-0 left-[45%]  z-[99]">
+        <div class="circle  text-[#fff]">
+          <div class="">
+            <FaPlay size={50} />
+          </div>
+          <div class="text">
+            <p>SHOWREEL SHOWREEL </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

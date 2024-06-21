@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 import { FaGlobeAmericas } from "react-icons/fa";
 const Header = () => {
+    
   return (
     <div className="fixed w-full py-5 z-[9999] top-0">
       <div className="w-[1200px] flex justify-between items-center mx-auto px-5 ">
