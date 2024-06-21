@@ -1,4 +1,6 @@
 import React from "react";
+import { BiArrowToRight } from "react-icons/bi";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Portfolio = () => {
   return (
@@ -14,6 +16,10 @@ const Portfolio = () => {
             }}
           >
             <div className=" group-hover:bg-custom-gradient1 h-full w-full"></div>
+            <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition flex items-center gap-4 font-semibold ">
+              <p>VIEW MORE</p>
+              <IoIosArrowRoundForward size={50} className="bg-[#dbdbdb81] rounded-full " />
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-5">
             <a
@@ -26,6 +32,9 @@ const Portfolio = () => {
               }}
             >
               <div className=" group-hover:bg-custom-gradient h-full w-full"></div>
+              <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
+                <IoIosArrowRoundForward size={40} />
+              </div>
             </a>
             <a
               href="#"
@@ -37,6 +46,9 @@ const Portfolio = () => {
               }}
             >
               <div className=" group-hover:bg-custom-gradient h-full w-full"></div>
+              <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
+                <IoIosArrowRoundForward size={40} />
+              </div>
             </a>{" "}
             <a
               href="#"
@@ -48,6 +60,9 @@ const Portfolio = () => {
               }}
             >
               <div className=" group-hover:bg-custom-gradient h-full w-full"></div>
+              <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
+                <IoIosArrowRoundForward size={40} />
+              </div>
             </a>{" "}
             <a
               href="#"
@@ -59,6 +74,9 @@ const Portfolio = () => {
               }}
             >
               <div className=" group-hover:bg-custom-gradient h-full w-full"></div>
+              <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
+                <IoIosArrowRoundForward size={40} />
+              </div>
             </a>
           </div>
         </div>
