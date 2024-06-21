@@ -4,11 +4,16 @@ import { TiArrowRight } from "react-icons/ti";
 import aboutimg1 from "../../../assets/react.svg";
 import aboutimg2 from "../../../assets/aboutImg.svg";
 import icon from "../../../assets/aboutIcon.svg";
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="h-[100vh]  bg-[#1e1e20]  ">
       <div className="w-[1200px] mx-auto px-5 flex items-center h-full mt-[200px] justify-between gap-[100px]">
-        <div className=" w-1/2 flex gap-5 items-end ">
+        <motion.div
+          whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+          transition={{ duration: 1 }}
+          className=" w-1/2 flex gap-5 items-end "
+        >
           <div className="flex gap-[30px] flex-col">
             <div className="group relative">
               <div
@@ -52,8 +57,12 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-1/2">
+        </motion.div>
+        <motion.div
+          className="w-1/2"
+          whileInView={{ translateX: ["30px", 0], opacity: [0.9, 1] }}
+          transition={{ duration: 1 }}
+        >
           <span className="flex  gap-3">
             <div className="w-[30px] h-[2px] bg-[#8f8c8c] mt-[10px]" />
             <p className="text xs:text-[13px] md:!text-base text-[#00A795] uppercase font-bold leading-[19px] pb-2 md:pb-5 about-us aos-init aos-animate">
@@ -105,7 +114,7 @@ const About = () => {
               </span>
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

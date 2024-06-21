@@ -1,6 +1,7 @@
 import React from "react";
 import { BiArrowToRight } from "react-icons/bi";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
@@ -26,7 +27,9 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-5">
-          <div
+          <motion.div
+            whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+            transition={{ duration: 1 }}
             className="relative h-[430px] group rounded-2xl "
             style={{
               backgroundImage:
@@ -53,9 +56,11 @@ const Portfolio = () => {
                 className="bg-[#dbdbdb81] rounded-full "
               />
             </div>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-2 gap-5">
-            <a
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group rounded-2xl "
               style={{
@@ -79,8 +84,10 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group rounded-2xl"
               style={{
@@ -104,8 +111,10 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>{" "}
-            <a
+            </motion.a>{" "}
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group rounded-2xl "
               style={{
@@ -115,10 +124,7 @@ const Portfolio = () => {
               }}
             >
               <span className="absolute p-5">
-                <h1
-                  className="lg:text-2xl lg:leading-[49px]  lg:mb-[6px] !leading-[120%] text-white text-sm sm:text-base  md:text-2xl sm:leading-[22px] font-bold !mb-1 line-clamp-3
-                "
-                >
+                <h1 className="lg:text-2xl lg:leading-[49px]  lg:mb-[6px] !leading-[120%] text-white text-sm sm:text-base  md:text-2xl sm:leading-[22px] font-bold !mb-1 line-clamp-3">
                   Express24
                 </h1>
                 <p className="text-xs font-semibold leading-3 uppercase text-white/60 lg:text-sm sm:leading-5 uppercase">
@@ -129,8 +135,10 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>{" "}
-            <a
+            </motion.a>{" "}
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group rounded-2xl "
               style={{
@@ -154,12 +162,14 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>
+            </motion.a>
           </div>
         </div>
         <div className="flex gap-5 mt-5 justify-between">
           <div className="flex-[.25] grid grid-rows-2 gap-5">
-            <a
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group rounded-2xl "
               style={{
@@ -181,8 +191,10 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>{" "}
-            <a
+            </motion.a>{" "}
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group  rounded-2xl"
               style={{
@@ -207,10 +219,12 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>
+            </motion.a>
           </div>
           <div className="flex-[.5]">
-            <div
+            <motion.div
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               className="relative h-[430px] group  rounded-2xl"
               style={{
                 backgroundImage:
@@ -238,10 +252,12 @@ const Portfolio = () => {
                   className="bg-[#dbdbdb81] rounded-full "
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="flex-[.245]  grid grid-rows-2  gap-5">
-            <a
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group  rounded-2xl"
               style={{
@@ -266,8 +282,10 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>{" "}
-            <a
+            </motion.a>{" "}
+            <motion.a
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               href="#"
               className="relative group rounded-2xl "
               style={{
@@ -292,7 +310,7 @@ const Portfolio = () => {
               <div className="absolute bottom-5 opacity-0 group-hover:opacity-100 text-[#fff] right-5 -translate-x-3 group-hover:translate-x-0  duration-300 transition bg-[#dbdbdb81] rounded-full">
                 <IoIosArrowRoundForward size={40} />
               </div>
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>
