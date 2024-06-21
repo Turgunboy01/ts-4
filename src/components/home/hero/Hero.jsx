@@ -41,12 +41,16 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      .
-      <div className="absolute bottom-[-350px] w-full">
+      <div className="absolute z-30 bottom-[-350px] w-full">
         <img src={mount} alt="" />
         <div className="relative">
           <div className=" absolute bottom-[0px] gradiant  w-full "></div>
         </div>
+      </div>
+      <div className="absolute top-[33%] left-[40%] ">
+        <h1 className="text-[450px] font-[900] text-[#ffffff3d] uppercase tracking-[0.03em] lg:leading-[22px]  md:leading-[20px]  sm:leading-[18px] leading-[16px]   sm:mb-[52px] mb-[32px] aos-init aos-animate">
+          UIC
+        </h1>
       </div>
     </div>
   );
