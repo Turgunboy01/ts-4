@@ -62,3 +62,14 @@
   font-size: 1.2em;
   transform-origin: 0 100px;
 }
+
+.slick-next {
+  position: absolute;
+  bottom: 600px;
+  left: 0 !important;
+  /* bottom: 24 !important; */
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px #333; /* Adjust the stroke color and width as needed */
+}

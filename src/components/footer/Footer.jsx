@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../../assets/arrow.svg";
+import arrow from "../../assets/arrow.svg";
 import {
   FaBehance,
   FaDribbble,
@@ -11,15 +11,15 @@ import {
   FaTwitter,
   FaYelp,
 } from "react-icons/fa";
-import img1 from "../../../assets/email.svg";
-import img2 from "../../../assets/phone.svg";
-import img3 from "../../../assets/footer1.svg";
-import logo from "../../../assets/logo2.svg";
-import logo2 from "../../../assets/logo3.svg";
+import img1 from "../../assets/email.svg";
+import img2 from "../../assets/phone.svg";
+import img3 from "../../assets/footer1.svg";
+import logo from "../../assets/logo2.svg";
+import logo2 from "../../assets/logo3.svg";
 import { IoMdStar } from "react-icons/io";
 const Footer = () => {
   return (
-    <div className="bg-[#1e1e20]">
+    <div className="bg-[#1e1e20] pt-[90px]">
       <div className="w-[1200px] mx-auto px-5">
         <div className="pb-[10px] flex justify-between items-center">
           <ul className=" flex gap-[20px]">

@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
 import { FaGlobeAmericas } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 const Header = () => {
-    
   return (
     <div className="fixed w-full py-5 z-[9999] top-0">
       <div className="w-[1200px] flex justify-between items-center mx-auto px-5 ">
@@ -20,36 +20,36 @@ const Header = () => {
               </a>
             </li>{" "}
             <li>
-              <a
-                href="#"
+              <NavLink
+                to="/brief"
                 className="active font-medium text-sm lg:text-base !leading-[19px] tracking-[0.03em] uppercase text-[#ffffff99] cursor-pointer transition duration-500 ease-in-out hover:text-[#FFFFFF] lg:inline-flex hidden hover:transition hover:duration-500 hover:ease-in-out"
               >
                 Services
-              </a>
+              </NavLink>
             </li>{" "}
             <li>
-              <a
-                href="#"
+              <NavLink
+                to={"/portfolio"}
                 className="active font-medium text-sm lg:text-base !leading-[19px] tracking-[0.03em] uppercase text-[#ffffff99] cursor-pointer transition duration-500 ease-in-out hover:text-[#FFFFFF] lg:inline-flex hidden hover:transition hover:duration-500 hover:ease-in-out"
               >
                 portfolio
-              </a>
+              </NavLink>
             </li>{" "}
             <li>
-              <a
-                href="#"
+              <NavLink
+                to="/vacancy"
                 className="active font-medium text-sm lg:text-base !leading-[19px] tracking-[0.03em] uppercase text-[#ffffff99] cursor-pointer transition duration-500 ease-in-out hover:text-[#FFFFFF] lg:inline-flex hidden hover:transition hover:duration-500 hover:ease-in-out"
               >
                 Career
-              </a>
+              </NavLink>
             </li>{" "}
             <li>
-              <a
-                href="#"
+              <NavLink
+                to="/blog"
                 className="active font-medium text-sm lg:text-base !leading-[19px] tracking-[0.03em] uppercase text-[#ffffff99] cursor-pointer transition duration-500 ease-in-out hover:text-[#FFFFFF] lg:inline-flex hidden hover:transition hover:duration-500 hover:ease-in-out"
               >
                 blogs
-              </a>
+              </NavLink>
             </li>
           </ul>
           <div className="flex items-center  gap-10">
