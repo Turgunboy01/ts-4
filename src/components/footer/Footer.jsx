@@ -20,9 +20,9 @@ import { IoMdStar } from "react-icons/io";
 const Footer = () => {
   return (
     <div className="bg-[#1e1e20] pt-[90px]">
-      <div className="w-[1200px] mx-auto px-5">
-        <div className="pb-[10px] flex justify-between items-center">
-          <ul className=" flex gap-[20px]">
+      <div className="max-w-[1200px] w-full mx-auto px-5">
+        <div className="pb-[10px] flex justify-between flex-wrap items-center">
+          <ul className=" flex flex-wrap gap-[20px]">
             <li>
               <a
                 href="#"
@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <a href="#" className="">
+          <a href="#" className="hidden md:block">
             <img
               src={arrow}
               alt=""
@@ -72,8 +72,8 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="flex gap-10 pb-[30px]">
-          <ul className="flex gap-4">
+        <div className="flex flex-wrap gap-10 pb-[30px]">
+          <ul className="flex flex-wrap gap-4">
             <li>
               <a href="#">
                 <FaFacebookF className="w-[40px] h-[40px] rounded-full border p-2 text-white" />
@@ -120,7 +120,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-wrap">
             <div className="flex gap-2 items-center text-[#fff]">
               <img src={img1} alt="footer" />
               <p>info@uic.group</p>
@@ -132,7 +132,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="py-[30px] grid grid-cols-2">
+        <div className="py-[30px] grid grid-cols-1 gap-5 lg:grid-cols-2">
           <div className="flex gap-[150px] items-center text-[#fff]">
             <p>© UIC GROUP 2024</p>
             <div className="flex group items-center gap-3">

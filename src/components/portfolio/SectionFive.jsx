@@ -3,9 +3,9 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 const SectionFive = () => {
   return (
-    <div className="flex gap-5 mt-5 justify-between">
+    <div className="flex gap-5 flex-col md:flex-row mt-5 justify-between">
       <div className="flex-[.5] flex flex-col gap-5">
-        <div className="grid grid-cols-2 gap-[25px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[25px]">
           <motion.div
             whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
             transition={{ duration: 1 }}
@@ -46,7 +46,7 @@ const SectionFive = () => {
             {" "}
             <span className="absolute p-5">
               <h1 className="lg:text-2xl lg:leading-[49px]  lg:mb-[6px] !leading-[120%] text-white text-sm sm:text-base  md:text-2xl sm:leading-[22px] font-bold !mb-1 line-clamp-3">
-              UzSUV
+                UzSUV
               </h1>
               <p className="text-xs font-semibold leading-3 uppercase text-white/60 lg:text-sm sm:leading-5">
                 WEBSITE
@@ -92,7 +92,7 @@ const SectionFive = () => {
             />
           </div>
         </motion.div>
-        <div className="grid grid-cols-2 gap-[25px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[25px]">
           <motion.div
             whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
             transition={{ duration: 1 }}
@@ -183,7 +183,7 @@ const SectionFive = () => {
             />
           </div>
         </motion.div>
-        <div className="grid grid-cols-2 gap-[25px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[25px]">
           <motion.div
             whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
             transition={{ duration: 1 }}
@@ -214,7 +214,7 @@ const SectionFive = () => {
           <motion.div
             whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
             transition={{ duration: 1 }}
-            className="relative  group  rounded-2xl"
+            className="relative h-[205px]  group  rounded-2xl"
             style={{
               backgroundImage:
                 'url("https://uic.group/media/cache/fa/4f/fa4f66e1e9ad3e87f35badec0259d415.jpg")',
@@ -240,7 +240,7 @@ const SectionFive = () => {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 gap-[25px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[25px]">
           <motion.div
             whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
             transition={{ duration: 1 }}

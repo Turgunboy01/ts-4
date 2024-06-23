@@ -13,7 +13,7 @@ const Portfolio = () => {
         <h3 className="bg-[#1E1E20] font-bold uppercase text-[32px] md:text-[64px] text-white leading-[130%]">
           Portfolio
         </h3>
-        <div className="">
+        <div className="flex flex-wrap gap-5">
           <button className="py-2 px-5 border-[1px] rounded-xl text-[#a3a3a3] border-[#434344]">
             Branding
           </button>

@@ -18,6 +18,10 @@
   );
 }
 
+a.active {
+  /* padding-top: 5px; */
+  border-bottom: 1px solid #00a690;
+}
 /* .gradient2 */
 
 .hero .circle {

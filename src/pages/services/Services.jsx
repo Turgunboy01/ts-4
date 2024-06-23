@@ -4,7 +4,7 @@ import { ServicesData } from "../../data/data";
 const Services = () => {
   return (
     <div className="bg-[#1e1e20]">
-      <div className="w-[1200px] mx-auto pt-[180px] px-5 ">
+      <div className="max-w-[1200px] w-full mx-auto pt-[180px] px-5 ">
         <motion.span
           whileInView={{ translateY: ["-30px", 0], opacity: [0.9, 1] }}
           transition={{ duration: 1 }}
@@ -22,7 +22,7 @@ const Services = () => {
         >
           What solution do you want?
         </motion.h3>
-        <div className="grid grid-cols-2 gap-5  mt-[30px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5  mt-[30px]">
           {ServicesData.map((item) => (
             <motion.div
               whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
