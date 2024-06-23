@@ -4,7 +4,7 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { BlogData } from "../../data/data";
 import Pagination from "./Pagination";
-
+import { motion } from "framer-motion";
 const Blogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
@@ -49,7 +49,11 @@ const Blogs = () => {
         </div>
         <div className="flex flex-wrap py-[30px] w-[70%] gap-4">
           {categories.map((cat) => (
-            <div className="">
+            <motion.div
+              className=""
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
+            >
               <button
                 onClick={() => setCategory(cat)}
                 className={`py-2 px-5 border-[1px] rounded-xl text-[#a3a3a3] ${
@@ -58,7 +62,7 @@ const Blogs = () => {
               >
                 {cat}
               </button>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="flex justify-between items-center mb-8">
@@ -72,7 +76,9 @@ const Blogs = () => {
         </div>
         <div className="grid grid-cols-2 gap-y-10 gap-x-16 pt-[30px]">
           {currentItems.map((item, index) => (
-            <div
+            <motion.div
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
               key={index}
               className="group flex gap-5 h-[220px] bg-[#2b2b2e] rounded-md"
             >
@@ -104,7 +110,7 @@ const Blogs = () => {
                   </p>
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="py-[40px] flex justify-end">

@@ -5,7 +5,7 @@ import { CareerIcon } from "../../assets/slider/career";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import { motion } from "framer-motion";
 const Career = () => {
   return (
     <div className="bg-[#1e1e20] pt-[100px]">
@@ -23,7 +23,11 @@ const Career = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-14 py-[80px] ">
           {CareerData.map((item) => (
-            <div className="p-[30px]  rounded-xl bg-[#2b2b2e] relative group">
+            <motion.div
+              whileInView={{ translateX: ["-30px", 0], opacity: [0.9, 1] }}
+              transition={{ duration: 1 }}
+              className="p-[30px]  rounded-xl bg-[#2b2b2e] relative group"
+            >
               <h1 className="pb-4 text-[18px] font-bold  text-white">
                 {item.title}
               </h1>
@@ -47,7 +51,7 @@ const Career = () => {
                   <IoIosArrowRoundForward className="text-[#fff]" size={25} />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -60,6 +60,9 @@ a.active {
   }
 }
 
+li {
+  list-style: none;
+}
 .hero .text span {
   position: absolute;
   left: 50%;
@@ -76,4 +79,9 @@ a.active {
 
 .stroke-text {
   -webkit-text-stroke: 1px #333; /* Adjust the stroke color and width as needed */
+}
+
+.nav-dark {
+  background: #1e1e2091;
+  backdrop-filter: blur(10px);
 }
