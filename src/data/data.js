@@ -388,3 +388,36 @@ export const BlogData = [
     id: 29,
   },
 ];
+
+export const portfolioAboutData = [
+  {
+    img: "https://uic.group/uic-images/about/portfolio/about-safenetpay.svg",
+    title:
+      "We have developed the safenetpay.com website of the                  international level using various types of animation that meet    all cybersecurity requirements. Safenetpay is an international company engaged in the optimization of payment systems for   companies.",
+  },
+  {
+    img: "https://uic.group/uic-images/about/portfolio/about-prosm.svg",
+    title:
+      "The “Pro Service Management” project, for this project our team gave a comprehensive solution - a mobile application, a website, a KPI system for employees, an automated billing system. The Pro SM project belongs to the Akfa holding group and manages all new buildings in Tashkent City. While our application provides services for all residents of new buildings.",
+  },
+  {
+    img: "https://uic.group/uic-images/about/portfolio/about-express24.svg",
+    title:
+      "A mobile application for the largest food delivery service Express24, as well as other solutions from our side. So Express 24 Merchant is a tool for establishments to receive orders and update order statuses and an application for managing a restaurant.",
+  },
+  {
+    img: "https://uic.group/uic-images/about/portfolio/about-tdiu.svg",
+    title:
+      "Website for Tashkent State University of Economics with interactive features for staff, students and applicants of the university. Also, branding of the university, an HR system for automating work with personnel and mandatory testing of our products by a team of our QA engineers were carried out by our company.",
+  },
+  {
+    img: "https://uic.group/uic-images/about/portfolio/about-vilz.svg",
+    title:
+      "For a company that sells cars of leading brands in Uzbekistan, I prepared the website Vilz.uz to increase sales of car dealerships. The site was prepared with the necessary options for registering for a test drive, buying a car on credit and other cars. The task was to create a mobile version of the site in the mode of a full-fledged online store and give the opportunity to read e-books. The mobile app is available on Google Play and the App Store.",
+  },
+  {
+    img: "https://uic.group/uic-images/about/portfolio/about-ayoluchun.svg",
+    title:
+      "Ayoluchun.uz, a special platform for women, provides them with comprehensive support, regardless of age and profession, and provides them with video lessons in areas of interest to them. Purpose: to unite women's education, spiritual, cultural and educational development on a single platform.",
+  },
+];

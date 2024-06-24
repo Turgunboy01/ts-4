@@ -85,3 +85,6 @@ li {
   background: #1e1e2091;
   backdrop-filter: blur(10px);
 }
+.about {
+  background-image: linear-gradient(#1b2c2c 5%, #1e1e20 80%);
+}
