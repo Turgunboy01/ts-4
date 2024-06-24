@@ -48,7 +48,7 @@ const About = () => {
           <h2 className="mb-4 text-[28px] font-semibold text-[#fff]  md:mb-8 lg:mb-10 ">
             Currently, our company offers its IT solutions in 9 main areas:
           </h2>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {ServicesData.map((service, index) => (
               <div className="rounded-xl py-5 px-6 h-[180px] bg-[#252527]">
                 <h2 className="text-[13px] md:text-[16px] lg:text-[24px] text-[#fff] font-bold leading-[120%] mb-3">
@@ -70,7 +70,7 @@ const About = () => {
               offers!
             </p>
             {portfolioAboutData.map((item) => (
-              <div className="flex gap-5 py-4">
+              <div className="flex gap-5 flex-col sm:flex-row py-4">
                 <img
                   src={item.img}
                   className="flex-[.1] w-[100%] object-contain"
@@ -97,11 +97,11 @@ const About = () => {
             addition to core services.
           </p>
           <div className="">
-            <h2 className="text-[27px] font-semibold text-[#fff]">
+            <h2 className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               The company offered solutions for the education system of the
               Republic of Uzbekistan in projects:{" "}
             </h2>
-            <span className="flex gap-5 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon1 />
               <p className=" flex-[.9] pt-4 text-[18px]  pb-4">
                 Co-Learning Academy is a social project for teaching IT
@@ -112,7 +112,7 @@ const About = () => {
                 specialists.
               </p>
             </span>
-            <span className="flex gap-5 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon2 />
               <p className=" flex-[.9] text-[18px]  pb-4">
                 Mental arithmetic - automated multifunctional platform! As a
@@ -123,7 +123,7 @@ const About = () => {
                 largest startups in the B2B direction
               </p>
             </span>
-            <span className="flex gap-5 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon3 />
               <p className=" flex-[.9] text-[18px]  pb-4">
                 iMaktab — aims to provide all schools, regardless of their size
@@ -139,7 +139,7 @@ const About = () => {
             <h2 className="text-[27px] font-semibold text-[#fff]">
               In the field of state administration
             </h2>
-            <span className="flex gap-5 py-4 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon4 />
               <p className=" flex-[.9] text-[18px]  pb-4">
                 Yosh saylovchi is an information website has been prepared to
@@ -150,7 +150,7 @@ const About = () => {
                 entering their data.
               </p>
             </span>
-            <span className="flex gap-5 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon5 />
               <p className=" flex-[.9] text-[18px]  pb-4">
                 Meningkonstitutsiyam.uz is a web portal that allows expanding
@@ -162,7 +162,7 @@ const About = () => {
                 and experts on issues put forward for public discussion.
               </p>
             </span>
-            <span className="flex gap-5 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon7 />
               <p className=" flex-[.9] text-[18px]  pb-4">
                 The project of the Notary Chamber provides many opportunities by
@@ -172,7 +172,7 @@ const About = () => {
                 easily accessible to users.
               </p>
             </span>
-            <span className="flex gap-5 items-center text-[#fff]">
+            <span className="flex gap-5 flex-col sm:flex-row py-4 text-[#fff]">
               <Icon8 />
               <p className=" flex-[.9] text-[18px]  pb-4">
                 Sergelihokimiyati.uz - the official page of the district
